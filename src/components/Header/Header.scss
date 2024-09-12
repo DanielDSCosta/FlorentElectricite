@@ -1,0 +1,129 @@
+.header {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center;
+  position: fixed; /* Fixer le header en haut de la page */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Assurer que le header reste au-dessus des autres éléments */
+}
+
+.header__nav {
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Centrer les liens verticalement */
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  position: relative; /* Nécessaire pour l'effet de soulignement */
+  transition: color 0.3s;
+  display: flex;
+  align-items: center; /* Centrer le texte verticalement */
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffcc00;
+    bottom: -2px;
+    left: 0;
+  }
+}
+
+.header__link--quote {
+  background-color: #ffcc00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center; /* Centrer le texte verticalement */
+
+  &:hover::after {
+    content: none; /* Enlever la barre de survol */
+  }
+
+  &:hover {
+    background-color: #e6b800;
+  }
+}
+
+.header__menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.header__popup {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+
+  &--open {
+    display: flex;
+  }
+}
+
+.header__popup__link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 5px 0;
+  position: relative; /* Nécessaire pour l'effet de soulignement */
+  display: flex;
+  align-items: center; /* Centrer le texte verticalement */
+
+  &:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffcc00;
+    bottom: -2px;
+    left: 0;
+  }
+}
+
+.header__popup__link--quote {
+  background-color: #ffcc00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center; /* Centrer le texte verticalement */
+
+  &:hover::after {
+    content: none; /* Enlever la barre de survol */
+  }
+
+  &:hover {
+    background-color: #e6b800;
+  }
+}
+
+.header__popup__separator {
+  height: 1px;
+  background-color: #555;
+  margin: 10px 0;
+}

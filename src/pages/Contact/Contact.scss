@@ -1,0 +1,88 @@
+.contact-container {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .contact-description {
+    margin-bottom: 20px;
+  }
+  
+  .contact-list {
+    list-style-type: disc;
+    padding-left: 40px; /* Ajoute un padding pour que les points soient visibles */
+    text-align: left; /* Aligne les éléments de la liste à gauche */
+    display: inline-block; /* Centre la liste dans le conteneur */
+    margin-bottom: 50px;
+  }
+  
+  .contact-list li {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Permet aux cartes de se réorganiser sur les petits écrans */
+  }
+  
+  .contact-card {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px; /* Ajoute de l'espace entre les cartes sur les petits écrans */
+  }
+  
+  .card-phone {
+    background-color: #e0f7fa;
+  }
+  
+  .card-email {
+    background-color: #ffe0b2;
+  }
+  
+  .card-meet {
+    background-color: #e1bee7;
+  }
+  
+  .contact-card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .card-phone i {
+    color: #87cefa; /* Couleur pour l'icône téléphone */
+  }
+  
+  .card-email i {
+    color: #ffa07a; /* Couleur pour l'icône enveloppe */
+  }
+  
+  /* Media query pour les écrans de moins de 768px */
+  @media (max-width: 768px) {
+    .contact-card {
+      width: 80%; /* Les cartes prennent plus de place sur les petits écrans */
+    }
+  }
+  
+  /* Media query pour les écrans de moins de 480px */
+  @media (max-width: 480px) {
+    .contact-title {
+      font-size: 1.5em; /* Réduit la taille du titre sur les très petits écrans */
+    }
+  
+    .contact-card {
+      width: 100%; /* Les cartes prennent toute la largeur sur les très petits écrans */
+    }
+  }

@@ -1,0 +1,51 @@
+.installation-container {
+  background-color: #e0e0e0; /* Gris un peu plus foncé */
+  padding: 20px;
+  text-align: center;
+}
+
+.installation-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background-color: #ffcc00;
+  margin: 20px auto; /* Ajout de marge pour espacer les traits */
+}
+
+.installation-paragraph {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.services-link {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.services-link:hover {
+  text-decoration: underline;
+}
+
+.quote-link-container {
+  text-align: center;
+}
+
+.quote-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.quote-link:hover {
+  background-color: #e6b800;
+}

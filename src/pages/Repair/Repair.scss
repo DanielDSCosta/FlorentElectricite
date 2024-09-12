@@ -1,0 +1,51 @@
+.repair-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Couleur de fond pour le conteneur */
+  padding: 50px; /* Réduire l'espace autour du cadre */
+}
+
+.repair-box {
+  background-image: url('../../assets/fondhome.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  max-width: 600px;
+  padding: 40px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  text-align: center;
+  color: white; /* Couleur du texte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+  position: relative; /* Nécessaire pour positionner les traits */
+}
+
+.repair-box::before,
+.repair-box::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #ffcc00;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.repair-box::before {
+  top: -20px; /* Positionner le trait au-dessus du cadre */
+}
+
+.repair-box::after {
+  bottom: -20px; /* Positionner le trait en dessous du cadre */
+}
+
+.repair-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.repair-paragraph {
+  font-size: 1.2em;
+}

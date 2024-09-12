@@ -1,0 +1,60 @@
+.services-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background-color: #ffcc00;
+  margin: 0 auto 20px auto;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  text-align: left; /* Align text to the left */
+  display: inline-block; /* Center the list container */
+}
+
+.services-list li {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  color: #ffcc00;
+  margin-right: 10px;
+}
+
+.services-description {
+  margin-bottom: 40px;
+  font-size: 1.1em;
+}
+
+.quote-link-container {
+  text-align: center;
+}
+
+.quote-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s;
+}
+
+.quote-link:hover {
+  background-color: #e6b800;
+}
+
