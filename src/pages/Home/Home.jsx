@@ -9,7 +9,7 @@ function Home() {
         <img src={logo} alt="Logo" className="logo" /> {/* Add the logo image */}
         <h2>Entreprise d'électricité générale</h2>
         <h1>Florent Belinha</h1>
-        <p>électricien à Nîmes et alentours</p>
+        <p>électricien sur Bouillargues et alentours</p>
       </div>
     </div>
   );

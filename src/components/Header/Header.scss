@@ -12,8 +12,33 @@
 
 .header__nav {
   display: flex;
+  align-items: center; /* Centrer les liens verticalement */
+  gap: 20px; /* Espace entre le logo et les liens */
+}
+
+.header__logo {
+  height: 60px; /* Ajustez la hauteur pour agrandir le logo */
+}
+
+.header__menu-button {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Toujours à droite */
+}
+
+.header__links {
+  display: flex;
   gap: 20px;
   align-items: center; /* Centrer les liens verticalement */
+}
+
+.header__links--open {
+  display: block; /* Afficher les liens en version mobile */
 }
 
 .header__link {
@@ -55,28 +80,16 @@
   }
 }
 
-.header__menu-button {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1.5em;
-  cursor: pointer;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-}
-
 .header__popup {
   display: none;
   flex-direction: column;
-  background-color: #333;
-  position: absolute;
+  background-color: #555;
+  position: fixed; /* Fixer le menu popup */
   top: 60px;
   right: 20px;
   padding: 10px;
   border-radius: 5px;
+  z-index: 1001; /* Assurer que le popup reste au-dessus des autres éléments */
 
   &--open {
     display: flex;
@@ -126,4 +139,30 @@
   height: 1px;
   background-color: #555;
   margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: space-between; /* Espace entre le logo et le bouton de menu */
+  }
+
+  .header__links {
+    display: none; /* Masquer les liens en version mobile */
+    flex-direction: column;
+    gap: 10px;
+    background-color: white; /* Couleur gris clair pour le menu */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .header__links--open {
+    display: flex; /* Afficher les liens en version mobile */
+  }
+
+  .header__menu-button {
+    display: block; /* Afficher le bouton de menu en version mobile */
+  }
 }

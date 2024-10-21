@@ -19,7 +19,7 @@ function Contact() {
         </div>
         <div className="contact-card card-meet">
           <strong>Vous souhaitez me rencontrer ?</strong>
-          <p><br />Je suis disponible à <strong>Nîmes</strong> et ses alentours</p>
+          <p><br />Je suis disponible à <strong>Bouillargues</strong> et ses alentours</p>
         </div>
       </div>
     </div>

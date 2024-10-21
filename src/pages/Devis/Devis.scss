@@ -1,0 +1,83 @@
+.devis-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Prend toute la hauteur de la vue */
+    background-color: #f0f0f0; /* Couleur de fond pour le conteneur */
+    padding: 20px;
+  }
+  
+  .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Assure que le padding est inclus dans la largeur totale */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e6b800;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  
+  .success {
+    color: green;
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Media queries pour les versions mobiles */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 15px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      padding: 8px;
+    }
+  
+    button {
+      padding: 8px 16px;
+    }
+  }
