@@ -11,11 +11,11 @@ function Contact() {
       <div className="contact-cards">
         <div className="contact-card card-phone">
           <i className="fas fa-phone"></i>
-          <p>06 11 87 14 26</p>
+          <p><strong>06 11 87 14 26</strong></p>
         </div>
         <div className="contact-card card-email">
           <i className="fas fa-envelope"></i>
-          <p>florentelectricite@gmail.com</p>
+          <p><strong>florentelectricite@gmail.com</strong></p>
         </div>
         <div className="contact-card card-meet">
           <strong>Vous souhaitez me rencontrer ?</strong>
