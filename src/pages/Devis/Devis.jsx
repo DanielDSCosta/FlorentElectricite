@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Devis.scss';
-import { Header, Footer } from '../../components';
+import { Header } from '../../components';
 
 function Devis() {
   const [formData, setFormData] = useState({
@@ -15,6 +15,10 @@ function Devis() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const navigate = useNavigate(); // Initialize useNavigate
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when the component is mounted
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,7 +43,7 @@ function Devis() {
     setFormErrors(errors);
     if (Object.keys(errors).length === 0) {
       setIsSubmitting(true);
-      fetch('https://formspree.io/f/xbljldgk', {
+      fetch('https://formspree.io/f/xjkvkgra', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -97,7 +101,6 @@ function Devis() {
           {isSubmitted && <p className="success">Votre message a été envoyé avec succès!</p>}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

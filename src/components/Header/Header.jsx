@@ -23,14 +23,14 @@ function Header() {
     <>
       <header className="header">
         <nav className="header__nav">
-          <RouterLink to="/" className="header__link" activeClassName="header__link--active" onClick={handleLogoClick}>
+          <RouterLink to="/" className="header__link" onClick={handleLogoClick}>
             <img src={logo} alt="Logo" className="header__logo" />
           </RouterLink>
           <div className="header__links">
-            <Link to="/#services" className="header__link" activeClassName="header__link--active">Services</Link>
-            <Link to="/#installation" className="header__link" activeClassName="header__link--active">Installation Electrique</Link>
-            <Link to="/#repair" className="header__link" activeClassName="header__link--active">Dépannage Electrique</Link>
-            <Link to="/#contact" className="header__link" activeClassName="header__link--active">Contact</Link>
+            <Link to="/#services" className="header__link">Services</Link>
+            <Link to="/#installation" className="header__link">Installation Electrique</Link>
+            <Link to="/#repair" className="header__link">Dépannage Electrique</Link>
+            <Link to="/#contact" className="header__link">Contact</Link>
             <RouterLink to="/devis" className="header__link header__link--quote">Devis Gratuit</RouterLink>
           </div>
           <button className="header__menu-button" onClick={toggleMenu}>
